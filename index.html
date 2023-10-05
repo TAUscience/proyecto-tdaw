@@ -3,92 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/prueba-estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos/headfoot.css">
+    <link rel="stylesheet" href="estilos/estilos-index.css">
     <title>Sport World</title>
 </head>
 <body>
     <header>
-        <h1>PÁGINA PRINCIPAL - SPORT WORLD</h1>
-        <nav>
-            <a href="index.html"><img src="imagenes/logo.jpeg" alt="logotipo de Spor World"></a>
-            <form role="search">
-                <div>
-                    <input type="search" id="buscar-sitio" name="q" placeholder="BUSCADOR">
-                    <button><img src="imagenes/general/busqueda.png" alt="Ícono de búsqueda"></button>
-                </div>
-            </form>
-            <a href="inicio-sesion.html">Iniciar sesión</a>
+        <nav class="nav1">
+            <ul>
+                <li><a class="logo" href="index.html"><img src="imagenes/logo.jpeg" alt="logotipo de Spor World"></a></li>
+                <li class="li-busqueda"><form role="search" id="busqueda">
+                    <div class="barra-busqueda">
+                        <input type="search" id="buscar-sitio" name="q" placeholder="BUSCADOR">
+                        <button></button>
+                    </div>
+                </form></li>
+                <li><a href="inicio-sesion.html">Iniciar sesión</a></li>
+            </ul>
         </nav>
-        <nav>
-            <a href="nosotros.html">¿Quiénes somos?</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="blog.html">Blog</a>
+        <nav class="nav2">
+            <ul>
+                <li><a href="nosotros.html">Conócenos</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
         </nav>
+        <h1>BIENVENIDO A SPORT WORLD</h1>
     </header>
     <main>
+        
         <article>
-            <div class="contenedor-carrusel-inicial">
+            <section class="contenedor-carrusel-inicial">
                 <div>
                     <a href="tienda.html"><img src="imagenes/carrusel-index/2x1-carreraonce.png" alt="Anuncio de dos por uno en artículos deportivos para correr por carrera once ka 2023"></a>
                 </div>
-            </div>
-            <div class="contenedor-principales">
-                <a href="tienda.html"><img src="imagenes/articulos/tendencia-01.png" alt="Imagen de artículos en tendencia"></a>
-                <a href="tienda.html"><img src="imagenes/articulos/nuevo-01.png" alt="Imagen de artículos nuevos en tienda"></a>
-                <a href="nosotros.html"><img src="imagenes/general/anunciate-aqui-300x300.png" alt="Imagen anunciate aquí, espacio publicitario"></a>
-            </div>
-            <div class="contenedor-carrusel-cupones">
-                <div >
+            </section>
+            <section>
+                <h2>Principales</h2>
+                <div class="contenedor-principales">
+                    <a href="tienda.html"><img src="imagenes/articulos/tendencia-01.png" alt="Imagen de artículos en tendencia"></a>
+                    <a href="tienda.html"><img src="imagenes/articulos/nuevo-01.png" alt="Imagen de artículos nuevos en tienda"></a>
+                    <a href="nosotros.html"><img src="imagenes/general/anunciate-aqui-300x300.png" alt="Imagen anunciate aquí, espacio publicitario"></a>
+                </div>
+            </section>
+            <section>
+                <div class="contenedor-carrusel-cupones">
                     <a href="tienda.html">20% de descuento en tu 1ra compra</a>
                 </div>
-            </div>
+            </section>
         </article>
         <article>
-            <div class="contenedor-marcas">
-                <div>
-                    <a href="tienda.html"><img src="imagenes/logos/logo-nike.png" alt="Articulos deportivos marca NIKE"></a>
+            <section>
+                <h2>Marcas</h2>
+                <div class="contenedor-marcas">
+                    <a class="logo-nike" href="tienda.html"><img src="imagenes/logos/logo-nike.png" alt="Articulos deportivos marca NIKE"></a>
+                    <a class="logo-adidas" href="tienda.html"><img src="imagenes/logos/logo-adidas.png" alt="Articulos deportivos marca ADIDAS"></a> 
+                    <a class="logo-pirma" href="tienda.html"><img src="imagenes/logos/logo-pirma.png" alt="Articulos deportivos marca PIRMA"></a>
+                    <a class="logo-puma" href="tienda.html"><img src="imagenes/logos/logo-puma.png" alt="Articulos deportivos marca PUMA"></a>
                 </div>
-                <div>
-                    <a href="tienda.html"><img src="imagenes/logos/logo-adidas.png" alt="Articulos deportivos marca ADIDAS"></a>
-                </div>  
-                <div>
-                    <a href="tienda.html"><img src="imagenes/logos/logo-pirma.png" alt="Articulos deportivos marca PIRMA"></a>
-                </div>
-                <div>
-                    <a href="tienda.html"><img src="imagenes/logos/logo-puma.png" alt="Articulos deportivos marca PUMA"></a>
-                </div>
-            </div>
-            <div class="contenedor-deportes">
-                <div>
+                
+            </section>
+            <section >
+                <h2>Deportes</h2>
+                <div class="contenedor-deportes">
                     <a href="tienda.html"><img src="imagenes/logos/logo-futbol.png" alt="Articulos deportivos para fútbol"></a>
-                </div>
-                <div>
                     <a href="tienda.html"><img src="imagenes/logos/logo-boxeo.png" alt="Articulos deportivos para boxeo"></a>
-                </div>
-                <div>
                     <a href="tienda.html"><img src="imagenes/logos/logo-basquetbol.png" alt="Articulos deportivos para básquetbol"></a>
-                </div>
-                <div>
                     <a href="tienda.html"><img src="imagenes/logos/logo-beisbol.png" alt="Articulos deportivos para béisbol"></a>
                 </div>
-            </div>
+            </section>
         </article>
+        <a class="anuncio" href="nosotros.html"><img src="imagenes/general/anunciate-aqui-900x300.png" alt="espacio publicitario en renta" title="Anunciate aquí"></a>
     </main> 
     <footer>
         <article>
             <p>Sport World</p>
-            <div>
+            <section>
                 <p>Síguenos</p>
-                <a href="nosotros.html"><img src="imagenes/general/instagram.png" alt="Logo de instagram para seguir a sport world"></a>
-                <a href="nosotros.html"><img src="imagenes/general/facebook.png" alt="Logo de facebook para seguir a sport world"></a>
-                <a href="nosotros.html"><img src="imagenes/general/youtube.png" alt="Logo de youtube para visitar canal de sport world"></a>
-            </div>
-            <div>
+                <a href="nosotros.html"><img class="boton-redes" src="imagenes/general/instagram.png" alt="Logo de instagram para seguir a sport world"></a>
+                <a href="nosotros.html"><img class="boton-redes" src="imagenes/general/facebook.png" alt="Logo de facebook para seguir a sport world"></a>
+                <a href="nosotros.html"><img class="boton-redes" src="imagenes/general/youtube.png" alt="Logo de youtube para visitar canal de sport world"></a>
+            </section>
+            <section>
+                <p>Ubicación</p>
+                <p>Alguna Calle 777, Colonia,<br>
+                    Municipio, Estado,<br>
+                    11111</p>
+            </section>
+            <section>
+                <p>Contacto</p>
+                <p>Teléfono: +123 456 789<br>
+                    Correo Electrónico: info@tiendadeportes.com</p>
+            </section>
+            <section>
                 <p><a href="">Condiciones de uso</a> | <a href="">Aviso de privacidad</a></p>
                 <p>&copy; 2023 Sport World</p>
-            </div>
-        </article>
-            
+            </section>
+        </article> 
     </footer>
 </body>
 </html>

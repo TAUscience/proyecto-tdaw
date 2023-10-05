@@ -1,0 +1,128 @@
+body{
+    background-color: #f5f5dc;
+    font-family: Montserrat, sans-serif;
+}
+/*AQUI COMIENZAN ESTILOS DE HEADER*/
+header{
+    width: auto;
+    margin: 0 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    /*font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    text-align: center;
+}
+h1{
+    font-size: 2.5rem;
+}
+header nav.nav1{
+    height: 5rem;
+    border-bottom: #2f4f4f solid 0.15rem;
+}
+header nav.nav2{
+    height: auto;
+    padding: .3rem;
+}
+header nav ul{
+    padding: 0;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 20%;
+    height: 100%;
+}
+header nav ul li.li-busqueda{
+    width: 60%;
+    margin: 0 0.5rem;
+}
+#busqueda{
+    width: 100%;
+    margin: 0;
+}
+.barra-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.barra-busqueda input{
+    border-radius: 5px;
+    height: 3em;
+    width: 79%;
+    border: solid 2px #2f4f4f;
+    background: linear-gradient(white,#f5f5dc);
+}
+.barra-busqueda button{
+    background-color: #2f4f4f;
+    border: solid 2px #2f4f4f;
+    height: 3em;
+    border-radius: 5px;
+    background-image: url(../imagenes/general/busqueda.png);
+    background-size: 50%;
+    background-position: 49%;
+    background-repeat: no-repeat;
+    width: 19%;
+}
+.barra-busqueda button:hover{
+    background-color: #A9A9A9;
+}
+header nav ul li a{
+    height: 100%;
+    max-height: 2.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+header nav ul li a:visited{
+    color: black;
+}
+header nav ul li a.logo,a.logo:hover{
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    background-color: #f5f5dc;
+}
+header nav ul li a:hover{
+    background-color: #2f4f4f;
+    color: #f5f5dc;
+}
+header nav ul li a img{
+    height: 100%;
+    margin: 0 ;
+}
+/*AQUI FINALIZA EL ESTILO DEL HEADER*/
+
+/*AQUI INICIA EL ESTILO DEL FOOTER*/
+footer{
+    background-color: #2f4f4f;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    padding: 2rem;
+}
+.boton-redes{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+footer a,a:visited{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: #A9A9A9;
+}
+footer section{
+    padding: 0.5rem 0;
+    font-size: 0.7rem;
+    margin: 0 auto;
+}
+footer article section p:first-of-type{
+    font-style: oblique;
+}
+/*AQUI FINALIZA EL ESTILO DEL FOOTER*/

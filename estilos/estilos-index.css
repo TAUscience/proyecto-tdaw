@@ -1,0 +1,87 @@
+.contenedor-carrusel-inicial{
+    width: auto;
+    margin: 0 0 2rem 0;
+}
+.contenedor-carrusel-inicial img{
+    width: 100%;
+}
+
+.contenedor-principales{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 2rem 0;
+}
+.contenedor-principales a{
+    width: auto;
+    margin: 1rem;
+}
+.contenedor-principales img{
+    width: 100%;
+}
+
+.contenedor-carrusel-cupones{
+    background-color: #b22222;
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0 0 2rem 0;
+}
+.contenedor-carrusel-cupones a,a:visited{
+    width: auto;
+    text-decoration: none;
+    color: white;
+}
+.contenedor-carrusel-cupones a:hover{
+    color: black;
+    background-color: #b25050;
+}
+
+
+.contenedor-marcas{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 2rem 0;
+}
+.contenedor-marcas a{
+    width: auto;
+    margin: 0.5rem;
+}
+.contenedor-marcas img{
+    width: 100%;
+}
+
+.contenedor-deportes{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 2rem 0;
+}
+.contenedor-deportes a{
+    width: auto;
+    margin: 0.5rem;
+}
+.contenedor-deportes img{
+    width: 100%;
+}
+
+.anuncio{
+    color: gray;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.anuncio img{
+    width: 40%;
+    padding: .5rem;
+    border: solid gray .15rem;
+}
+
+
+section h2{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    background-color: #2f4f4f;
+    text-align: center;
+    color: white;
+}
