@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilos/headfoot.css">
-    <title>SportWorld - Iniciar sesión</title>
+    <link rel="stylesheet" href="estilos/estilos-inicio-sesion.css">
+    <title>Iniciar sesión - SportWorld</title>
 </head>
 
 <body>
@@ -39,32 +40,60 @@
         <h1>INICIAR SESIÓN</h1>
     </header>
 
-    <h2>Ingresa tu correo electronico para registrarte o iniciar sesión.</h2><br>
+    <main>
+        <h2>Ingresa tus datos</h2>
+        <form action="#">
+            <p>
+                <label for="nombre-usuario">Nombre de usuario:</label>
+                <input type="text" name="nombre-usuario" id="nombre-usuario" required>
+            </p>
+            <p>
+                <label for="contrasena-usuario">Contraseña:</label>
+                <input type="password" name="contrasena-usuario" id="contrasena-usuario" required>
+            </p>
+            <button type="submit" value="Iniciar">Iniciar</button>
+        </form>
 
-    <div>
-        <label for="ciudad">País:</label>
-        <input type="text" id="pais" name="pais" list="paises">
-        <datalist id="paises">
-            <option value="México">
-            <option value="Estados Unidos">
-            <option value="Canada">
-            <option value="España">
-            <option value="India">
-            <option value="Brasil">
-            <option value="Chile">
-            <option value="Argentina">
-            <option value="Bolivia">
-            <option value="China">
-        </datalist>
-    </div>
+        <h2>Registrarse</h2>
+        <form>
+            <p>
+                <label for="pais">País:</label><br>
+                <input required type="text" id="pais" name="pais" list="paises">
+                <datalist id="paises">
+                    <option value="México">
+                    <option value="Estados Unidos">
+                    <option value="Canada">
+                    <option value="España">
+                    <option value="India">
+                    <option value="Brasil">
+                    <option value="Chile">
+                    <option value="Argentina">
+                    <option value="Bolivia">
+                    <option value="China">
+                </datalist>
+            </p>
+            <p>
+                <label for="correo-usuario-nuevo">Correo electrónico:</label>
+                <input required type="email" name="correo-usuario-nuevo" id="correo-usuario-nuevo">
+            </p>
+            <p>
+                <label for="nombre-usuario-nuevo">Nombre de usuario:</label>
+                <input required type="text" id="nombre-usuario-nuevo" name="nombre-usuario-nuevo">
+            </p>
+            <p>
+                <label for="contrasena-usuario-nuevo">Contraseña:</label>
+                <input required type="password" name="contrasena-usuario-nuevo" id="contrasena-usuario-nuevo">
+            </p>
+            <p class="politicas">
+                <input type="checkbox" name="acepto-politicas-terminos" id="acepto-politicas-terminos" required>
+                <label for="acepto-politicas-terminos">Al continuar acepto la <a
+                        href="url_de_politica_de_privacidad">política de privacidad</a> y los
+                    <a href="url_de_terminos_de_uso">Términos de uso</a> de SportWorld.</label>
+            </p>
+            <button type="submit" value="Registrarse">Registrarse</button>
+        </form>
 
-    <br>Correo electronico: <br> <input type="email" name="correo" required> <br><br />
-
-    Al continuar acepto la <a href="url_de_politica_de_privacidad">política de privacidad</a> y los
-    <a href="url_de_terminos_de_uso">Términos de uso</a> de SportWorld. <br> <br>
-
-
-    <input type="submit" name="submit"> <br> <br>
+    </main>
 
     <footer>
         <article>
