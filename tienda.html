@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="estilos/estilos-tienda.css">
   <link rel="stylesheet" href="estilos/headfoot.css">
   <title>SportWorld - Tienda</title>
 </head>
@@ -38,98 +39,98 @@
     <h1>TIENDA</h1>
   </header>
 
-  <nav id="Barra_Menu">
-    <ul>
-      <li><a href="#">Nuevos lanzamientos</a></li>
-      <li><a href="#">Hombre</a></li>
-      <li><a href="#">Mujer</a></li>
-    </ul>
-  </nav>
-
-  <h2>Obten productos chidos 2 exclusivos al hacerte miembro</h2>
-
-  <select id="ordenar-por">
-    <option value="v">Ordenar por</option>
-    <option value="precio-ascendente">Precio (ascendente)</option>
-    <option value="precio-descendente">Precio (descendente)</option>
-    <option value="nombre-ascendente">Nombre (ascendente)</option>
-    <option value="nombre-descendente">Nombre (descendente)</option>
-  </select>
-
-  <select id="Ocultar filtros">
-    <option value="v">Ocultar filtros</option>
-    <option value="filtro">Color verde </option>
-    <option value="filtro">Color azul </option>
-    <option value="filtro">Color morado </option>
-  </select>
-
-  <section id="mi-apartado">
-    <img src="imagenes/Proyecto.DIMW/gorra-nike-jordan.jpg" alt="Descripción del producto" width="200" height="200">
-    <p>Descripción del producto 1</p>
-    <img src="imagenes/Proyecto.DIMW/Multiestaciones-5.jpg" alt="Descripción del producto" width="200" height="200">
-    <p>Descripción del producto 1</p>
-    <img src="imagenes/Proyecto.DIMW/Balon_basquet.jpg" alt="Descripción del producto" width="200" height="200">
-    <p>Descripción del producto 1</p>
-    <img src="imagenes/Proyecto.DIMW/aductor-y-abductor-bunker.jpeg" alt="Descripción del producto" width="200"
-      height="200">
-    <p>Descripción del producto 1</p>
-    <img src="imagenes/Proyecto.DIMW/guante-musc.avif" alt="Descripción del producto" width="200" height="200">
-    <p>Descripción del producto 1</p>
-    <img src="imagenes/Proyecto.DIMW/gorra-nike-jordan.jpg" alt="Descripción del producto" width="200" height="200">
-    <p>Descripción del producto 1</p>
-  </section>
-
-
-
-
-  <aside>
-    <p>
-      <b>Equipo / Accecsorios y equipo <br> Hombre- Accesorios y equipo</b>
-    </p>
-
-
-    <nav id="Categorias">
-      <a href="#">Bolsas y Mochilas</a><br>
-      <a href="#">Balones</a> <br>
-      <a href="#">Gorras, bandas</a> <br>
-      <a href="#">Equipo y Maquinas</a> <br>
-      <a href="#">Almohadillas y protección</a>
+  <div id="linksArriba">
+    <nav id="Barra_Menu">
+      <ul>
+        <li><a href="#">Nuevos lanzamientos</a></li>
+        <li><a href="#">Hombre</a></li>
+        <li><a href="#">Mujer</a></li>
+      </ul>
     </nav>
+  </div>
 
-    <p>Genero(1)</p>
-    <label>
-      <input type="checkbox" name="genero" value="Hombre"> Hombre <br>
-      <input type="checkbox" name="genero" value="Mujer"> Mujer <br>
-      <input type="checkbox" name="genero" value="Otro"> Otro <br>
-    </label>
+  <h2 id="tit">Obten productos exclusivos al hacerte miembro</h2>
+
+  <div id="filtro1">
+    <select id="ordenar-por">
+      <option value="v">Ordenar por</option>
+      <option value="precio-ascendente">Precio (ascendente)</option>
+      <option value="precio-descendente">Precio (descendente)</option>
+      <option value="nombre-ascendente">Nombre (ascendente)</option>
+      <option value="nombre-descendente">Nombre (descendente)</option>
+    </select>
+  
+    <select id="Ocultar filtros">
+      <option value="v">Ocultar filtros</option>
+      <option value="filtro">Color verde </option>
+      <option value="filtro">Color azul </option>
+      <option value="filtro">Color morado </option>
+    </select>
+  </div>
+
+  <div id="ContenidoPrincipal">
+  
+    <aside>
+      <p>
+        <b>Equipo / Accecsorios y equipo <br> Hombre- Accesorios y equipo</b>
+      </p>
+      <nav id="Categorias">
+        <a href="#">Bolsas y Mochilas</a><br>
+        <a href="#">Balones</a> <br>
+        <a href="#">Gorras, bandas</a> <br>
+        <a href="#">Equipo y Maquinas</a> <br>
+        <a href="#">Almohadillas y protección</a>
+      </nav>
+  
+      <p>Genero(1)</p>
+      <label>
+        <input type="checkbox" name="genero" value="Hombre"> Hombre <br>
+        <input type="checkbox" name="genero" value="Mujer"> Mujer <br>
+        <input type="checkbox" name="genero" value="Otro"> Otro <br>
+      </label>
+  
+      <p>Deportes</p>
+      <label>
+        <input type="checkbox" name="deporte" value="Gymnasio"> Gymnasio <br>
+        <input type="checkbox" name="deporte" value="Basquetball"> Basquetball <br>
+      </label>
+  
+      <p>Tallas</p>
+      <label>
+        <input type="checkbox" name="talla" value="Grande"> Grande <br>
+        <input type="checkbox" name="talla" value="Mediana"> Mediana <br>
+        <input type="checkbox" name="talla" value="Chica"> Chica <br>
+      </label>
+  
+      <p>Promociones</p>
+      <label>
+        <input type="checkbox" name="promocion" value="porcentaje"> 80-100% <br>
+        <input type="checkbox" name="promocion" value="porcentaje"> 70-80% <br>
+        <input type="checkbox" name="promocion" value="porcentaje"> 60-70% <br>
+      </label>
+    </aside>
+
+    <section id="mi-apartado">
+      <img src="imagenes/Proyecto.DIMW/gorra-nike-jordan.jpg" alt="Descripción del producto" width="200" height="200">
+      <p>Descripción del producto 1</p>
+      <img src="imagenes/Proyecto.DIMW/Multiestaciones-5.jpg" alt="Descripción del producto" width="200" height="200">
+      <p>Descripción del producto 1</p>
+      <img src="imagenes/Proyecto.DIMW/Balon_basquet.jpg" alt="Descripción del producto" width="200" height="200">
+      <p>Descripción del producto 1</p>
+      <img src="imagenes/Proyecto.DIMW/aductor-y-abductor-bunker.jpeg" alt="Descripción del producto" width="200"
+        height="200">
+      <p>Descripción del producto 1</p>
+      <img src="imagenes/Proyecto.DIMW/guante-musc.avif" alt="Descripción del producto" width="200" height="200">
+      <p>Descripción del producto 1</p>
+      <img src="imagenes/Proyecto.DIMW/gorra-nike-jordan.jpg" alt="Descripción del producto" width="200" height="200">
+      <p>Descripción del producto 1</p>
+    </section>
+  </div>
 
 
-    <p>Deportes</p>
-    <label>
-      <input type="checkbox" name="deporte" value="Gymnasio"> Gymnasio <br>
-      <input type="checkbox" name="deporte" value="Basquetball"> Basquetball <br>
-    </label>
-
-    <p>Tallas</p>
-    <label>
-      <input type="checkbox" name="talla" value="Grande"> Grande <br>
-      <input type="checkbox" name="talla" value="Mediana"> Mediana <br>
-      <input type="checkbox" name="talla" value="Chica"> Chica <br>
-    </label>
-
-    <p>Promociones</p>
-    <label>
-      <input type="checkbox" name="promocion" value="porcentaje"> 80-100% <br>
-      <input type="checkbox" name="promocion" value="porcentaje"> 70-80% <br>
-      <input type="checkbox" name="promocion" value="porcentaje"> 60-70% <br>
-    </label>
-  </aside>
-
-
-
-  <section>
+  <section id="categorias_abajo">
     <nav id="Otras_categorias">
-      <p><b>Otras Categorias Relacionadas:</b></p>
+      <p><b>Otras Categorias Relacionadas</b></p>
       <ul>
         <li><a href="#">Sudaderas de hombre/Mujer</a></li>
         <li><a href="#">Guantes deportivos</a></li>

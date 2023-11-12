@@ -1,0 +1,81 @@
+
+/*-----------------Nuevos lanzamientos, hombre,etc--------------*/
+div#linksArriba{
+    display: flex;
+    padding: none;
+    justify-content: center;
+    background-color: black;
+}
+
+nav#Barra_Menu ul{
+    display: flex;
+    list-style: none;
+}
+
+nav#Barra_Menu li{
+    margin-right: 5em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav#Barra_Menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*---------------------------Subtitulo y los 2 filtros ordenar y ocultar------------------------*/
+
+#tit{
+    background-color: blueviolet;
+    padding: 1vw;
+    text-align: center;
+}
+
+div#filtro1 {
+    padding: 1em;
+    display: flex;
+    background-color: aqua;
+
+}
+
+/*-----------------------Contenido Centro-Productos------------------*/
+div#ContenidoPrincipal{
+    display: flex;
+    background-color: #F7DC6F;
+}
+
+#ContenidoPrincipal aside {
+    flex: 20%; /* Hace que ambos elementos ocupen la mitad del espacio disponible */
+    padding: 20px; /* Ajusta el relleno según tus necesidades */
+}
+#ContenidoPrincipal section {
+    flex: 80%; /* Hace que ambos elementos ocupen la mitad del espacio disponible */
+    padding: 20px; /* Ajusta el relleno según tus necesidades */
+}
+/*-----------------------Parte de abajo de Otras Categorias------------------*/
+section#categorias_abajo{
+    background-color: #82E0AA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+nav#Otras_categorias li{
+    margin-right: 5em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav#Otras_categorias a{
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 20px;
+    color: white;
+}
+
+nav#Otras_categorias p{
+    padding: 1vw;
+    background-color: bisque;
+    text-align: center;
+}
