@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="estilos/headfoot.css">
     <link rel="stylesheet" href="estilos/estilos-inicio-sesion.css">
     <title>Iniciar sesión - SportWorld</title>
+    <script src="scripts/validacion-inicio-sesion.js" defer></script>
 </head>
 
 <body>
@@ -42,14 +43,16 @@
 
     <main>
         <h2>Ingresa tus datos</h2>
-        <form action="#">
+        <form action="#" id="formulario-inicio-sesion">
             <p>
                 <label for="nombre-usuario">Nombre de usuario:</label>
-                <input type="text" name="nombre-usuario" id="nombre-usuario" required>
+                <input type="text" name="nombre-usuario" id="nombre-usuario">
+                <p class="etiqueta-sugerencia oculto">Verifica tu nombre</p>
             </p>
             <p>
                 <label for="contrasena-usuario">Contraseña:</label>
-                <input type="password" name="contrasena-usuario" id="contrasena-usuario" required>
+                <input type="password" name="contrasena-usuario" id="contrasena-usuario">
+                <p class="etiqueta-sugerencia oculto">Verifica tu contraseña</p>
             </p>
             <button type="submit" value="Iniciar">Iniciar</button>
         </form>
