@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="estilos/estilos-tienda.css">
   <link rel="stylesheet" href="estilos/headfoot.css">
+  <script src="/scripts/tienda.js"></script>
   <title>SportWorld - Tienda</title>
 </head>
 
@@ -60,18 +61,18 @@
       <option value="nombre-descendente">Nombre (descendente)</option>
     </select>
   
-    <select id="Ocultar filtros">
+    <select id="OcultarFil">
       <option value="v">Ocultar filtros</option>
       <option value="filtro">Color verde </option>
       <option value="filtro">Color azul </option>
       <option value="filtro">Color morado </option>
     </select>
-  </div>
+  </div> <br>
 
   <div id="ContenidoPrincipal">
   
-    <aside>
-      <p>
+    <aside class="EquiposSelect">
+      <p id="Equipo">
         <b>Equipo / Accecsorios y equipo <br> Hombre- Accesorios y equipo</b>
       </p>
       <nav id="Categorias">
@@ -82,27 +83,27 @@
         <a href="#">Almohadillas y protección</a>
       </nav>
   
-      <p>Genero(1)</p>
+      <p class="negritas">Genero(1)</p>
       <label>
         <input type="checkbox" name="genero" value="Hombre"> Hombre <br>
         <input type="checkbox" name="genero" value="Mujer"> Mujer <br>
         <input type="checkbox" name="genero" value="Otro"> Otro <br>
       </label>
   
-      <p>Deportes</p>
+      <p class="negritas"> Deportes</p>
       <label>
         <input type="checkbox" name="deporte" value="Gymnasio"> Gymnasio <br>
         <input type="checkbox" name="deporte" value="Basquetball"> Basquetball <br>
       </label>
   
-      <p>Tallas</p>
+      <p class="negritas">Tallas</p>
       <label>
         <input type="checkbox" name="talla" value="Grande"> Grande <br>
         <input type="checkbox" name="talla" value="Mediana"> Mediana <br>
         <input type="checkbox" name="talla" value="Chica"> Chica <br>
       </label>
   
-      <p>Promociones</p>
+      <p class="negritas">Promociones</p>
       <label>
         <input type="checkbox" name="promocion" value="porcentaje"> 80-100% <br>
         <input type="checkbox" name="promocion" value="porcentaje"> 70-80% <br>
@@ -111,23 +112,84 @@
     </aside>
 
     <section id="mi-apartado">
-      <img src="imagenes/Proyecto.DIMW/gorra-nike-jordan.jpg" alt="Descripción del producto" width="200" height="200">
-      <p>Descripción del producto 1</p>
-      <img src="imagenes/Proyecto.DIMW/Multiestaciones-5.jpg" alt="Descripción del producto" width="200" height="200">
-      <p>Descripción del producto 1</p>
-      <img src="imagenes/Proyecto.DIMW/Balon_basquet.jpg" alt="Descripción del producto" width="200" height="200">
-      <p>Descripción del producto 1</p>
-      <img src="imagenes/Proyecto.DIMW/aductor-y-abductor-bunker.jpeg" alt="Descripción del producto" width="200"
-        height="200">
-      <p>Descripción del producto 1</p>
-      <img src="imagenes/Proyecto.DIMW/guante-musc.avif" alt="Descripción del producto" width="200" height="200">
-      <p>Descripción del producto 1</p>
-      <img src="imagenes/Proyecto.DIMW/gorra-nike-jordan.jpg" alt="Descripción del producto" width="200" height="200">
-      <p>Descripción del producto 1</p>
-    </section>
-  </div>
+      <div class="Prod">
+        <input class="checkbox" type="checkbox" name="Elgir" value="Opcion"> 
+        <img src="imagenes/Proyecto.DIMW/gorra-nike-jordan.jpg" alt="Descripción del producto" width="200" height="200">
+        <nav>
+          <p>Gorra Jordan J1</p> 
+          <p>Por Nike</p>
+          <p>Más vendido #3</p>
+          <p><span class="precio-item">$399</span>    |    Disponible</p>
+          <p>Enviado desde: México</p>
 
+          <div id="SeccionVentasLink">
+            <nav id="OpcionesDeIngreso">
+              <select name="cantidad" id="cantidadMax">
+                <option value="num">Cantidad</option>
+                <option value="cant">1</option>
+                <option value="cant">2 </option>
+                <option value="cant">3 </option>
+              </select>
+                <li><a href="#">Guardar para ver más tarde |</a></li>
+                <li><a href="#">Ver más productos similares |</a></li>
+                <li><a href="#">Compartir</a></li>
+            </nav>
+          </div>   
+        </nav>         
+      </div> <div class="linea-horizontal"></div>   
 
+      <div class="Prod">
+        <input class="checkbox" type="checkbox" name="Elgir" value="Opcion"> 
+        <img src="imagenes/Proyecto.DIMW/Balon_basquet.jpg" alt="Descripción del producto" width="200" height="200">
+        <nav>
+          <p>Balon De Basquetball NBA</p> 
+          <p>Por Nike</p>
+          <p>Más vendido #1</p>
+          <p><span class="precio-item">$550</span>    |    Disponible</p>
+          <p>Enviado desde: E.U.</p>
+
+          <div id="SeccionVentasLink">
+            <nav id="OpcionesDeIngreso">
+              <select name="cantidad" id="cantidadMax">
+                <option value="num">Cantidad</option>
+                <option value="cant">1</option>
+                <option value="cant">2 </option>
+                <option value="cant">3 </option>
+              </select>
+                <li><a href="#">Guardar para ver más tarde |</a></li>
+                <li><a href="#">Ver más productos similares |</a></li>
+                <li><a href="#">Compartir</a></li>
+            </nav>
+          </div>  
+        </nav>
+      </div> <div class="linea-horizontal"></div>   
+
+      <div class="Prod">
+        <input class="checkbox" type="checkbox" name="Elgir" value="Opcion"> 
+        <img src="imagenes/Proyecto.DIMW/guante-musc.avif" alt="Descripción del producto" width="200" height="200">
+        <nav>
+          <p>Guantes de Box</p> 
+          <p>Por FAMM Company </p>
+          <p>Más vendido #10</p>
+          <p><span class="precio-item">$650</span>   |    Disponible</p>
+          <p>Enviado desde: Monterrey</p>
+
+          <div id="SeccionVentasLink">
+            <nav id="OpcionesDeIngreso">
+              <select name="cantidad" id="cantidadMax">
+                <option value="num">Cantidad</option>
+                <option value="cant">1</option>
+                <option value="cant">2 </option>
+                <option value="cant">3 </option>
+              </select>
+                <li><a href="#">Guardar para ver más tarde |</a></li>
+                <li><a href="#">Ver más productos similares |</a></li>
+                <li><a href="#">Compartir</a></li>
+            </nav>
+          </div>        
+        </nav>   
+    </section> 
+  </div>  <br>
   <section id="categorias_abajo">
     <nav id="Otras_categorias">
       <p><b>Otras Categorias Relacionadas</b></p>
