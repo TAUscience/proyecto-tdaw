@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="estilos/estilos-tienda.css">
   <link rel="stylesheet" href="estilos/headfoot.css">
-  <script src="/scripts/tienda.js"></script>
+
   <title>SportWorld - Tienda</title>
 </head>
 
@@ -113,23 +113,24 @@
 
     <section id="mi-apartado">
       <div class="Prod">
-        <input class="checkbox" type="checkbox" name="Elgir" value="Opcion"> 
+        <input class="checkbox" type="checkbox" id="checkbox3" name="Elgir" value="Opcion"> 
         <img src="imagenes/Proyecto.DIMW/gorra-nike-jordan.jpg" alt="Descripción del producto" width="200" height="200">
         <nav>
           <p>Gorra Jordan J1</p> 
           <p>Por Nike</p>
           <p>Más vendido #3</p>
-          <p><span class="precio-item">$399</span>    |    Disponible</p>
+          <p><span class="precio-item">399</span>    |    Disponible</p>
           <p>Enviado desde: México</p>
 
           <div id="SeccionVentasLink">
             <nav id="OpcionesDeIngreso">
-              <select name="cantidad" id="cantidadMax">
+              <button id="boton1" name="favorito" type="button">Elegir</button>
+              <!--<select name="cantidad" id="cantidadMax">
                 <option value="num">Cantidad</option>
                 <option value="cant">1</option>
                 <option value="cant">2 </option>
                 <option value="cant">3 </option>
-              </select>
+              </select> -->
                 <li><a href="#">Guardar para ver más tarde |</a></li>
                 <li><a href="#">Ver más productos similares |</a></li>
                 <li><a href="#">Compartir</a></li>
@@ -139,23 +140,24 @@
       </div> <div class="linea-horizontal"></div>   
 
       <div class="Prod">
-        <input class="checkbox" type="checkbox" name="Elgir" value="Opcion"> 
+        <input class="checkbox" type="checkbox" id="checkbox2" name="Elgir" value="Opcion"> 
         <img src="imagenes/Proyecto.DIMW/Balon_basquet.jpg" alt="Descripción del producto" width="200" height="200">
         <nav>
           <p>Balon De Basquetball NBA</p> 
           <p>Por Nike</p>
           <p>Más vendido #1</p>
-          <p><span class="precio-item">$550</span>    |    Disponible</p>
+          <p><span class="precio-item">550</span>    |    Disponible</p>
           <p>Enviado desde: E.U.</p>
 
           <div id="SeccionVentasLink">
             <nav id="OpcionesDeIngreso">
-              <select name="cantidad" id="cantidadMax">
+              <button id="boton2" name="favorito2" type="button2">Elegir</button>
+              <!--<select name="cantidad" id="cantidadMax">
                 <option value="num">Cantidad</option>
                 <option value="cant">1</option>
                 <option value="cant">2 </option>
                 <option value="cant">3 </option>
-              </select>
+              </select>-->
                 <li><a href="#">Guardar para ver más tarde |</a></li>
                 <li><a href="#">Ver más productos similares |</a></li>
                 <li><a href="#">Compartir</a></li>
@@ -165,23 +167,24 @@
       </div> <div class="linea-horizontal"></div>   
 
       <div class="Prod">
-        <input class="checkbox" type="checkbox" name="Elgir" value="Opcion"> 
+        <input class="checkbox" type="checkbox" id="checkbox3" name="Elgir" value="Opcion"> 
         <img src="imagenes/Proyecto.DIMW/guante-musc.avif" alt="Descripción del producto" width="200" height="200">
         <nav>
           <p>Guantes de Box</p> 
           <p>Por FAMM Company </p>
           <p>Más vendido #10</p>
-          <p><span class="precio-item">$650</span>   |    Disponible</p>
+          <p><span class="precio-item">650</span>   |    Disponible</p>
           <p>Enviado desde: Monterrey</p>
 
           <div id="SeccionVentasLink">
             <nav id="OpcionesDeIngreso">
-              <select name="cantidad" id="cantidadMax">
+              <button id="boton3" name="favorito3" type="button3">Elegir</button>
+              <!--<select name="cantidad" id="cantidadMax">
                 <option value="num">Cantidad</option>
-                <option value="cant">1</option>
-                <option value="cant">2 </option>
-                <option value="cant">3 </option>
-              </select>
+                <option class="1" value="cant">1</option>
+                <option class="2" value="cant">2 </option>
+                <option class="3" value="cant">3 </option>
+              </select> -->
                 <li><a href="#">Guardar para ver más tarde |</a></li>
                 <li><a href="#">Ver más productos similares |</a></li>
                 <li><a href="#">Compartir</a></li>
@@ -190,6 +193,15 @@
         </nav>   
     </section> 
   </div>  <br>
+
+  <div id="flex">
+    <div id="seccionOculta" class="oculto">
+      <p>Carrito de compras</p>
+      <!-- Contenido de la sección oculta -->
+      <p>Este es el contenido de la sección oculta.</p>
+    </div> <br>
+  </div>
+  
   <section id="categorias_abajo">
     <nav id="Otras_categorias">
       <p><b>Otras Categorias Relacionadas</b></p>
@@ -230,6 +242,8 @@
       </section>
     </article>
   </footer>
+  <script src="/scripts/tienda.js"></script>
+
 </body>
 
 </html>

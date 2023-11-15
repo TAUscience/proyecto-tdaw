@@ -187,3 +187,27 @@ nav#Otras_categorias p{
 #Otras_categorias ul li a:hover {
     color: red; /* Color del texto al pasar el cursor sobre el enlace */
   }
+
+  /*Sesion Oculta--------------------------------------------------------*/
+  #seccionOculta {
+    display: none; /* Establece la dirección del flujo como horizontal */
+    background-color: #F7DC6F;
+    padding: 20px;
+    margin-top: 20px;
+    animation: desplegar 0.5s ease; /* Animación de despliegue */
+  }
+  
+
+  @keyframes desplegar {
+    from {
+      left: -100%; /* Comienza fuera del contenedor hacia la izquierda */
+    }
+    to {
+      left: 0; /* Se desplaza hacia la posición original */
+    }
+  }
+  
+  #checkbox {
+    margin-top: 20px;
+  }
+  
