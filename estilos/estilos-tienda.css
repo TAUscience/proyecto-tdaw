@@ -1,0 +1,189 @@
+
+/*-----------------Nuevos lanzamientos, hombre,etc--------------*/
+div#linksArriba{
+    display: flex;
+    padding: none;
+    justify-content: center;
+    background-color: black;
+}
+
+nav#Barra_Menu ul{
+    display: flex;
+    list-style: none;
+}
+
+nav#Barra_Menu li{
+    margin-right: 5em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav#Barra_Menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/*---------------------------Subtitulo y los 2 filtros ordenar y ocultar------------------------*/
+
+#tit{
+    background-color: #ffffff;
+    padding: 1vw;
+    text-align: center;
+}
+
+div#filtro1 {
+    background-color:  #000000;
+    display: flex;
+    margin: none;
+}
+
+#OcultarFil, #ordenar-por {
+    font-size: 1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:   white  ;
+    color: #000000;
+    margin: 0.5em;
+    padding: 0.3em 0 0.3em 0;
+  }
+  
+.negritas{
+    font-weight: bold;
+}
+/*-----------------------Contenido Centro-Productos------------------*/
+div#ContenidoPrincipal{
+    display: flex;
+    background-color: #F7DC6F;
+}
+/*-----------------------parte izquierda de links y selectores------------------*/
+#Categorias{
+    background-color: #ffffff;
+}
+
+#Equipo{
+    padding: 0.5em ;
+    color: white;
+    background-color: black;
+}
+
+
+nav#Categorias a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 0.3em;
+}
+
+nav#Categorias a:hover{
+    background-color: #FF5000 ;
+    color: white;
+}
+
+#Barra_Menu ul li a:hover {
+    color: red; /* Color del texto al pasar el cursor sobre el enlace */
+  }
+
+/*-----------------------parte de los productos------------------*/
+
+#ContenidoPrincipal{
+    display: flex;
+}
+
+#ContenidoPrincipal aside {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    flex: 25%; /* Hace que ambos elementos ocupen la mitad del espacio disponible */
+    padding: 20px; 
+}
+
+div.linea-horizontal {
+    display: flex;
+    border: 1px solid #000; /* Establece el color y grosor de la línea */
+    margin-bottom: 1%;
+}
+
+/*-----------------------------------Contenido de los productos--------------------------*/
+#ContenidoPrincipal section {
+    flex-direction: row;
+    background-color: #F7DC6F;
+    flex: 75%; /* Hace que ambos elementos ocupen la mitad del espacio disponible */
+    padding: 20px; 
+}
+
+section#mi-apartado{
+    background-color:  #D33918  ;
+}
+
+
+div.Prod{
+    display: flex;
+    background-color: #ffffff;
+}
+div.Prod p, img{
+    margin-right: 2em;
+}
+
+.checkbox{
+    width: 20px; /* Ancho deseado */
+    height: 20px; /* Altura deseada */
+}
+
+div#OpcionesDeIngreso{
+    display: flex;
+    background-color: #7e5555;
+}
+
+#cantidadMax{
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+}
+
+#OpcionesDeIngreso a {
+    color: rgb(84, 84, 238);
+}
+
+#OpcionesDeIngreso li {
+    display: inline-block;
+    margin-right: 10px; /* Añade un margen entre los elementos si es necesario */
+}
+
+@media only screen and (max-width: 767px) {
+    #ContenidoPrincipal section,
+    div.Prod,
+    div#OpcionesDeIngreso {
+        flex-direction: column; /* Cambia a disposición vertical */
+    }
+}
+
+/*-----------------------Parte de abajo de Otras Categorias------------------*/
+section#categorias_abajo{
+    background-color:   black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+nav#Otras_categorias li{
+    margin-right: 5em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav#Otras_categorias a{
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 20px;
+    color: white;
+}
+
+nav#Otras_categorias p{
+    padding: 1vw;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#Otras_categorias ul li a:hover {
+    color: red; /* Color del texto al pasar el cursor sobre el enlace */
+  }
