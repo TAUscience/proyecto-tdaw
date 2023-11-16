@@ -35,7 +35,7 @@ formulario.onsubmit = function (event) {
         }
     }
 };
-//*este es el codigo de la ventana emergente*//
+/*este es el codigo de la ventana emergente*/
 const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
