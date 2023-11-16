@@ -46,15 +46,17 @@ main form button:hover{
     background-color: #f5f5dc;
     color: #2f4f4f;
 }
-.etiqueta-sugerencia{
-    color: #cf6e6e;
-    text-align: left;
-    margin: -2.5vh 0 2vh 3vw;
-    font-size: .85rem;
+
+.etiqueta-sugerencia {
+  color: red;
+  margin-top: 5px; /* Ajusta según sea necesario */
+  visibility: hidden; /* Oculta el mensaje inicialmente */
 }
-.oculto{
-    color: #2f4f4f;
+
+.campo-error {
+  border: 1px solid red;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 * {
@@ -108,3 +110,54 @@ button {
   opacity: 0.7;
   font-size: 14px;
 }
+/* Estilo para el contenedor principal */
+.btn-group {
+  display: inline-block;
+  position: relative; /* Añadido para alinear correctamente el menú desplegable */
+}
+
+/* Estilo para el botón principal */
+.btn-secondary {
+  background-color: #ccc;
+  color: #fff;
+  border: 1px solid #00ffb3;
+  margin-right: 0; /* Reducción del margen derecho */
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: calc(100% + 5px); /* Ajuste para reducir la separación vertical */
+  right: 0;
+  margin-top: 0; /* Eliminación del margen superior */
+}
+
+/* Mostrar el menú desplegable al pasar el ratón sobre el botón */
+.btn-group:hover .dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Estilo para los elementos del menú desplegable */
+.dropdown-item {
+  padding: 10px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Estilo para resaltar el elemento seleccionado */
+.dropdown-item:hover {
+  background-color: #47a386;
+  color: #fff;
+}
+
