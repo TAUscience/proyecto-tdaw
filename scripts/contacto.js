@@ -1,40 +1,49 @@
-function correoError(entradaCampo) {
-    /* El correo electrónico debe incluir un @ */
-    return entradaCampo.value.indexOf("@") === -1;
-}
+document.addEventListener('DOMContentLoaded', function () {
+    var formulario = document.getElementById('formulario-contacto');
+    var emailInput = document.getElementById('email');
+    var comentariosInput = document.getElementById('comentariosContacto');
+    var mensajeError = document.querySelector('.etiqueta-sugerencia');
+    var botonCancelar = document.getElementById('open');
 
-function estiloInvalido(elemento) {
-    elemento.style.backgroundColor = "#cf6e6e";
-    elemento.style.color = "white";
-}
+    formulario.addEventListener('submit', function (event) {
+        var emailValue = emailInput.value;
 
-function estiloReset(elemento) {
-    elemento.style.backgroundColor = "#f5f5dc";
-    elemento.style.color = "#2f4f4f";
-}
+        if (!isValidEmail(emailValue)) {
+            event.preventDefault(); // Evitar que el formulario se envíe
 
-let formulario = document.getElementById('formulario-contacto');
-let entradasRequeridas = formulario.querySelectorAll("#formulario-contacto input");
-let etiquetasSugerencia = formulario.querySelectorAll(".etiqueta-sugerencia");
-
-formulario.onsubmit = function (event) {
-    let invalido = false;
-
-    for (let i = 0; i < entradasRequeridas.length; i++) {
-        let entrada = entradasRequeridas[i];
-
-        if (correoError(entrada)) {
-            event.preventDefault();
-            estiloInvalido(entrada);
-            etiquetasSugerencia[i].textContent = "Ingresa de manera correcta tu correo";
-            etiquetasSugerencia[i].classList.remove("oculto");
-            invalido = true;
+            // Mostrar mensaje de error y aplicar estilo de error al campo de email
+            mensajeError.classList.remove('oculto');
+            emailInput.classList.add('campo-error');
         } else {
-            estiloReset(entrada);
-            etiquetasSugerencia[i].classList.add("oculto");
+            // Quitar el mensaje de error y el estilo de error
+            mensajeError.classList.add('oculto');
+            emailInput.classList.remove('campo-error');
         }
+    });
+
+    emailInput.addEventListener('input', function () {
+        var emailValue = emailInput.value;
+
+        // Ocultar el mensaje de error y el estilo de error al escribir en el campo de email
+        if (isValidEmail(emailValue)) {
+            mensajeError.classList.add('oculto');
+            emailInput.classList.remove('campo-error');
+        }
+    });
+
+    botonCancelar.addEventListener('click', function () {
+        // Limpiar los campos al hacer clic en el botón Cancelar
+        emailInput.value = '';
+        comentariosInput.value = '';
+        mensajeError.classList.add('oculto');
+        emailInput.classList.remove('campo-error');
+    });
+
+    function isValidEmail(email) {
+        // Verificar si hay una arroba y no hay espacios en blanco
+        return /\S+@\S+\.\S+/.test(email);
     }
-};
+});
 /*este es el codigo de la ventana emergente*/
 const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
