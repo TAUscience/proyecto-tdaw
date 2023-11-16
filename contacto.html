@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilos/headfoot.css">
     <link rel="stylesheet" href="estilos/estilos-contacto.css">
+    <script src="scripts/contacto.js" defer></script>
     <title>Sport World</title>
 </head>
 <body>
@@ -36,18 +37,30 @@
         <h2>Nos complace leer tus comentarios</h2>
     </header>
     <main>
-        <form action="#" method="post">
+        <form action="#" id="formulario-contacto">
             <p>
-                <label for="#emailContacto">Ingresa tu correo</label><br>
-                <input required type="emailContacto" name="emailContacto" id="#email">
+                <label for="email">Ingresa tu correo</label><br>
+                <input type="email" name="emailContacto" id="email">
+                <p class="etiqueta-sugerencia oculto">Verifica tu correo electrónico</p>
             </p>
             <p>
-                <label for="#comentariosContacto">Ingresa tus comentarios</label><br>
-                <textarea required name="comentariosContacto" id="#comentariosContacto" cols="30" rows="10"></textarea>
+                <label for="comentariosContacto">Ingresa tus comentarios</label><br>
+                <textarea required name="comentariosContacto" id="comentariosContacto" cols="30" rows="10"></textarea>
             </p>
             <button type="submit">Enviar comentarios</button>
-            <button type="reset">Cancelar</button>
+            <button id="open"> Cancelar</button>
+              <div id="modal_container" class="modal-container">
+                <div class="modal">
+                  <h1>Cancelar</h1>
+                  <p>
+                    ¿estas seguro de querer cancelar?
+                    Tus comentarios son muy importantes para nosotros. 
+                  </p>
+                  <button id="close">Cerrar</button>
+                </div>
+              </div>
         </form>
+    </main> 
     </main> 
     <footer>
         <article>
